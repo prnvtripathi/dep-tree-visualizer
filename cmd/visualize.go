@@ -14,8 +14,9 @@ var format string
 var outputFileName string
 
 var visualizeCmd = &cobra.Command{
-	Use:   "visualize",
-	Short: "Visualize dependencies",
+	Use:     "visualize",
+	Aliases: []string{"visualise"},
+	Short:   "Visualize dependencies",
 	Long: `The visualize command generates a visual representation of the dependency tree.
 It supports tree output with colors and exporting to JSON.`,
 	Run: func(cmd *cobra.Command, args []string) {
